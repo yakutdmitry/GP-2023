@@ -87,3 +87,7 @@ func load_samples():
 				# $AudioStreamPlayer.play()
 				# break
 			file_name = dir.get_next()	
+			
+			
+			##some stuff aded
+			
