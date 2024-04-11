@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bq307v70k7jkj"]
+[gd_scene load_steps=2 format=3 uid="uid://bq307v70k7jkj"]
+
+[ext_resource type="Texture2D" uid="uid://bwfe3x231ncdu" path="res://Layer 0.png" id="1_8iu5l"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -362,3 +364,8 @@ offset_bottom = 706.0
 scale = Vector2(1.14616, 1.5845)
 text = "Master
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(347, 726)
+scale = Vector2(1.15377, 1.26035)
+texture = ExtResource("1_8iu5l")
