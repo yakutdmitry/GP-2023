@@ -1,371 +1,303 @@
-[gd_scene load_steps=2 format=3 uid="uid://bq307v70k7jkj"]
-
-[ext_resource type="Texture2D" uid="uid://bwfe3x231ncdu" path="res://Layer 0.png" id="1_8iu5l"]
+[gd_scene format=3 uid="uid://bq307v70k7jkj"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="SideText" type="GridContainer" parent="CanvasLayer"]
+offset_left = 878.0
+offset_top = 763.0
+offset_right = 937.78
+offset_bottom = 936.0
+scale = Vector2(3.78727, 1.43587)
+theme_override_constants/v_separation = 20
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/PanelContainer"]
+[node name="RichTextLabel6" type="RichTextLabel" parent="CanvasLayer/SideText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 11
+theme_override_font_sizes/bold_font_size = 4
+text = "Speed
+"
+fit_content = true
+scroll_active = false
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="CanvasLayer/SideText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 11
+theme_override_font_sizes/bold_font_size = 4
+text = "Reverb
+"
+fit_content = true
+scroll_active = false
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="CanvasLayer/SideText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 11
+theme_override_font_sizes/bold_font_size = 4
+text = "Delay
+"
+fit_content = true
+scroll_active = false
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="CanvasLayer/SideText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 11
+theme_override_font_sizes/bold_font_size = 4
+text = "Pitch
+"
+fit_content = true
+scroll_active = false
+
+[node name="TopButtons" type="GridContainer" parent="CanvasLayer"]
+layout_direction = 2
+offset_left = 39.0
+offset_top = 27.0
+offset_right = 300.0
+offset_bottom = 67.0
+scale = Vector2(2.08249, 2.36094)
+columns = 5
+
+[node name="Button" type="Button" parent="CanvasLayer/TopButtons"]
+layout_mode = 2
+text = "Mute
+"
+
+[node name="Button2" type="Button" parent="CanvasLayer/TopButtons"]
+layout_mode = 2
+text = "Mute
+"
+
+[node name="Button3" type="Button" parent="CanvasLayer/TopButtons"]
+layout_mode = 2
+text = "Mute
+"
+
+[node name="Button4" type="Button" parent="CanvasLayer/TopButtons"]
+layout_mode = 2
+text = "Mute
+"
+
+[node name="Button5" type="Button" parent="CanvasLayer/TopButtons"]
+layout_mode = 2
+text = "Mute
+"
+
+[node name="SideButtons" type="GridContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 669.0
+offset_top = 139.0
+offset_right = 769.0
+offset_bottom = 240.0
+scale = Vector2(3.35477, 5.25002)
+theme_override_constants/h_separation = 7
+theme_override_constants/v_separation = 4
+columns = 3
+
+[node name="Button" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button2" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button3" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button4" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button5" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button6" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button7" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button8" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Button9" type="Button" parent="CanvasLayer/SideButtons"]
+layout_mode = 2
+text = "B1"
+
+[node name="Chanels" type="GridContainer" parent="CanvasLayer"]
+offset_left = 39.0
+offset_top = 162.0
+offset_right = 135.0
+offset_bottom = 202.0
+scale = Vector2(5.66034, 12.8812)
+columns = 5
+
+[node name="VSlider2" type="VSlider" parent="CanvasLayer/Chanels"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="VSlider3" type="VSlider" parent="CanvasLayer/Chanels"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="VSlider4" type="VSlider" parent="CanvasLayer/Chanels"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="VSlider5" type="VSlider" parent="CanvasLayer/Chanels"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="VSlider6" type="VSlider" parent="CanvasLayer/Chanels"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="ChanelsNaming" type="GridContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(303.355, 68.645)
+offset_left = 45.0
+offset_top = 103.0
+offset_right = 348.355
+offset_bottom = 171.645
+scale = Vector2(1.87961, 3.69001)
+columns = 5
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="CanvasLayer/ChanelsNaming"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/normal_font_size = 10
+text = "Vocals
+"
+scroll_active = false
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="CanvasLayer/ChanelsNaming"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/normal_font_size = 10
+text = "Drums
+"
+scroll_active = false
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="CanvasLayer/ChanelsNaming"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/normal_font_size = 10
+text = "Bass Guitar"
+scroll_active = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ChanelsNaming"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/normal_font_size = 10
+text = "Guitar 1"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/ChanelsNaming"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/normal_font_size = 10
+text = "Guitar 2"
+scroll_active = false
+
+[node name="FXSliders" type="GridContainer" parent="CanvasLayer"]
+offset_left = 669.0
+offset_top = 749.0
+offset_right = 709.0
+offset_bottom = 825.0
+scale = Vector2(5.05838, 3.30714)
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/FXSliders"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Sliders" type="Node" parent="CanvasLayer/PanelContainer/GridContainer"]
+[node name="HSlider2" type="HSlider" parent="CanvasLayer/FXSliders"]
+layout_mode = 2
+size_flags_horizontal = 3
 
-[node name="VSlider2" type="VSlider" parent="CanvasLayer/PanelContainer/GridContainer/Sliders"]
-offset_left = 47.4803
-offset_top = 200.342
-offset_right = 81.4803
-offset_bottom = 411.342
-scale = Vector2(1, 1.16371)
+[node name="HSlider3" type="HSlider" parent="CanvasLayer/FXSliders"]
+layout_mode = 2
+size_flags_horizontal = 3
 
-[node name="VSlider3" type="VSlider" parent="CanvasLayer/PanelContainer/GridContainer/Sliders"]
-offset_left = 179.0
-offset_top = 200.342
-offset_right = 213.0
-offset_bottom = 411.342
-scale = Vector2(1, 1.16371)
+[node name="HSlider4" type="HSlider" parent="CanvasLayer/FXSliders"]
+layout_mode = 2
+size_flags_horizontal = 3
 
-[node name="VSlider4" type="VSlider" parent="CanvasLayer/PanelContainer/GridContainer/Sliders"]
-offset_left = 313.0
-offset_top = 200.0
-offset_right = 347.0
-offset_bottom = 411.0
-scale = Vector2(1, 1.16371)
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer"]
+offset_left = 669.0
+offset_top = 683.0
+offset_right = 848.0
+offset_bottom = 749.0
+scale = Vector2(1.8677, 0.90202)
+columns = 2
 
-[node name="VSlider5" type="VSlider" parent="CanvasLayer/PanelContainer/GridContainer/Sliders"]
-offset_left = 455.0
-offset_top = 200.0
-offset_right = 489.0
-offset_bottom = 411.0
-scale = Vector2(1, 1.16371)
-
-[node name="VSlider6" type="VSlider" parent="CanvasLayer/PanelContainer/GridContainer/Sliders"]
-offset_left = 597.0
-offset_top = 200.0
-offset_right = 631.0
-offset_bottom = 411.0
-scale = Vector2(1, 1.16371)
-
-[node name="side Buttons" type="Node" parent="CanvasLayer/PanelContainer/GridContainer"]
-
-[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 701.0
-offset_top = 147.0
-offset_right = 773.0
-offset_bottom = 178.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button2" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 814.0
-offset_top = 147.0
-offset_right = 886.0
-offset_bottom = 178.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button3" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 926.0
-offset_top = 147.0
-offset_right = 998.0
-offset_bottom = 178.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button4" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 701.0
-offset_top = 238.0
-offset_right = 773.0
-offset_bottom = 269.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button5" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 814.0
-offset_top = 238.0
-offset_right = 886.0
-offset_bottom = 269.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button6" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 926.0
-offset_top = 238.0
-offset_right = 998.0
-offset_bottom = 269.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button7" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 701.0
-offset_top = 333.0
-offset_right = 773.0
-offset_bottom = 364.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button8" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 814.0
-offset_top = 333.0
-offset_right = 886.0
-offset_bottom = 364.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button9" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 926.0
-offset_top = 333.0
-offset_right = 998.0
-offset_bottom = 364.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button10" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 701.0
-offset_top = 432.0
-offset_right = 773.0
-offset_bottom = 463.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button11" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 814.0
-offset_top = 432.0
-offset_right = 886.0
-offset_bottom = 463.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button12" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 926.0
-offset_top = 432.0
-offset_right = 998.0
-offset_bottom = 463.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button13" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 701.0
-offset_top = 519.0
-offset_right = 773.0
-offset_bottom = 550.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button14" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 814.0
-offset_top = 519.0
-offset_right = 886.0
-offset_bottom = 550.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Button15" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/side Buttons"]
-offset_left = 926.0
-offset_top = 519.0
-offset_right = 998.0
-offset_bottom = 550.0
-scale = Vector2(1.00519, 2.16556)
-text = "mute all"
-
-[node name="Top Mutes" type="Node" parent="CanvasLayer/PanelContainer/GridContainer"]
-
-[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Top Mutes"]
-offset_left = 32.0
-offset_top = 32.0
-offset_right = 81.0
-offset_bottom = 63.0
-scale = Vector2(2.39518, 3.17626)
-text = "Mute
-"
-
-[node name="Button2" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Top Mutes"]
-offset_left = 176.0
-offset_top = 32.0
-offset_right = 225.0
-offset_bottom = 63.0
-scale = Vector2(2.39518, 3.17626)
-text = "Mute
-"
-
-[node name="Button3" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Top Mutes"]
-offset_left = 313.0
-offset_top = 32.0
-offset_right = 362.0
-offset_bottom = 63.0
-scale = Vector2(2.39518, 3.17626)
-text = "Mute
-"
-
-[node name="Button4" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Top Mutes"]
-offset_left = 447.0
-offset_top = 32.0
-offset_right = 496.0
-offset_bottom = 63.0
-scale = Vector2(2.39518, 3.17626)
-text = "Mute
-"
-
-[node name="Button5" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Top Mutes"]
-offset_left = 584.0
-offset_top = 32.0
-offset_right = 633.0
-offset_bottom = 63.0
-scale = Vector2(2.39518, 3.17626)
-text = "Mute
-"
-
-[node name="Text" type="Node" parent="CanvasLayer/PanelContainer/GridContainer"]
-
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 44.0
-offset_top = 147.0
-offset_right = 139.0
-offset_bottom = 187.0
-text = "Guitar 1"
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 185.0
-offset_top = 147.0
-offset_right = 280.0
-offset_bottom = 187.0
-text = "Guitar 2"
-
-[node name="RichTextLabel3" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 328.0
-offset_top = 147.0
-offset_right = 423.0
-offset_bottom = 187.0
-text = "Bass Guitar"
-
-[node name="RichTextLabel4" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 457.0
-offset_top = 147.0
-offset_right = 552.0
-offset_bottom = 187.0
-text = "Drums
-"
-
-[node name="RichTextLabel5" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 593.0
-offset_top = 147.0
-offset_right = 688.0
-offset_bottom = 187.0
-text = "Vocals
-"
-
-[node name="RichTextLabel6" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 888.0
-offset_top = 744.0
-offset_right = 1012.0
-offset_bottom = 784.0
-text = "Speed
-"
-
-[node name="RichTextLabel7" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 888.0
-offset_top = 816.0
-offset_right = 1012.0
-offset_bottom = 856.0
-text = "Reverb
-"
-
-[node name="RichTextLabel8" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 888.0
-offset_top = 877.0
-offset_right = 1012.0
-offset_bottom = 917.0
-text = "Delay
-"
-
-[node name="RichTextLabel9" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridContainer/Text"]
-offset_left = 888.0
-offset_top = 946.0
-offset_right = 1012.0
-offset_bottom = 986.0
-text = "Pitch
-"
-
-[node name="Corner buttons" type="Node" parent="CanvasLayer/PanelContainer/GridContainer"]
-
-[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Corner buttons"]
-offset_left = 973.0
-offset_top = 8.0
-offset_right = 1014.0
-offset_bottom = 62.0
-scale = Vector2(1.03179, 0.776692)
-text = "play
-"
-
-[node name="Button2" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Corner buttons"]
-offset_left = 904.0
-offset_top = 8.0
-offset_right = 959.0
-offset_bottom = 62.0
-scale = Vector2(1.03179, 0.776692)
-text = "pause"
-
-[node name="Button3" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/Corner buttons"]
-offset_left = 828.0
-offset_top = 8.0
-offset_right = 893.0
-offset_bottom = 62.0
-scale = Vector2(1.03179, 0.776692)
-text = "Restart"
-
-[node name="FX" type="Node" parent="CanvasLayer/PanelContainer/GridContainer"]
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/PanelContainer/GridContainer/FX"]
-offset_left = 684.0
-offset_top = 946.0
-offset_right = 870.0
-offset_bottom = 990.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/PanelContainer/GridContainer/FX"]
-offset_left = 684.0
-offset_top = 877.0
-offset_right = 870.0
-offset_bottom = 921.0
-
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/PanelContainer/GridContainer/FX"]
-offset_left = 684.0
-offset_top = 816.0
-offset_right = 870.0
-offset_bottom = 860.0
-
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/PanelContainer/GridContainer/FX"]
-offset_left = 684.0
-offset_top = 744.0
-offset_right = 870.0
-offset_bottom = 788.0
-
-[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/FX"]
-offset_left = 680.0
-offset_top = 672.0
-offset_right = 792.0
-offset_bottom = 703.0
-scale = Vector2(1.75673, 1.75673)
+[node name="Button" type="Button" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 text = "Choose Track
 "
 
-[node name="Button2" type="Button" parent="CanvasLayer/PanelContainer/GridContainer/FX"]
-offset_left = 886.0
-offset_top = 672.0
-offset_right = 949.0
-offset_bottom = 706.0
-scale = Vector2(1.14616, 1.5845)
+[node name="Button2" type="Button" parent="CanvasLayer/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 text = "Master
 "
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(347, 726)
-scale = Vector2(1.15377, 1.26035)
-texture = ExtResource("1_8iu5l")
+[node name="CornerButtons" type="GridContainer" parent="CanvasLayer"]
+layout_direction = 2
+offset_left = 708.0
+offset_top = 5.0
+offset_right = 877.0
+offset_bottom = 45.0
+scale = Vector2(1.83458, 2.64302)
+columns = 3
+
+[node name="Button3" type="Button" parent="CanvasLayer/CornerButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Restart"
+
+[node name="Button2" type="Button" parent="CanvasLayer/CornerButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "pause"
+
+[node name="Button" type="Button" parent="CanvasLayer/CornerButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "play
+"
