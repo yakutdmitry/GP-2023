@@ -1,17 +1,35 @@
-[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://d0tiv0n6oek2y"]
+[gd_resource type="AudioBusLayout" load_steps=5 format=3 uid="uid://d0tiv0n6oek2y"]
 
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_jagyb"]
 resource_name = "Reverb"
+room_size = 0.0
+damping = 0.1
+spread = 0.37
+hipass = 0.33
+wet = 0.7
 
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_7bspv"]
 resource_name = "PitchShift"
 pitch_scale = 0.01
 
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_45xlo"]
+resource_name = "Phaser"
+range_min_hz = 10.0
+feedback = 0.3
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_txgsb"]
+resource_name = "Amplify"
+volume_db = 24.0
+
 [resource]
 bus/0/effect/0/effect = SubResource("AudioEffectReverb_jagyb")
-bus/0/effect/0/enabled = false
+bus/0/effect/0/enabled = true
 bus/0/effect/1/effect = SubResource("AudioEffectPitchShift_7bspv")
 bus/0/effect/1/enabled = true
+bus/0/effect/2/effect = SubResource("AudioEffectPhaser_45xlo")
+bus/0/effect/2/enabled = true
+bus/0/effect/3/effect = SubResource("AudioEffectAmplify_txgsb")
+bus/0/effect/3/enabled = true
 bus/1/name = &"Vocals"
 bus/1/solo = false
 bus/1/mute = false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmvjkv3cy05gd"
+path="res://.godot/imported/Guitar 1.mp3-9fbcf912d30fd27be774dc0b1d311426.mp3str"
+
+[deps]
+
+source_file="res://Mix/Guitar 1.mp3"
+dest_files=["res://.godot/imported/Guitar 1.mp3-9fbcf912d30fd27be774dc0b1d311426.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
