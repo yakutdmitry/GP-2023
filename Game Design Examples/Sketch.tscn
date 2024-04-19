@@ -298,60 +298,50 @@ text = "Master
 
 [node name="CornerButtons" type="GridContainer" parent="CanvasLayer"]
 layout_direction = 2
-offset_left = 708.0
+offset_left = 669.0
 offset_top = 5.0
-offset_right = 877.0
-offset_bottom = 45.0
+offset_right = 856.0
+offset_bottom = 59.0
 scale = Vector2(1.83458, 2.64302)
-columns = 3
+columns = 2
 
-[node name="Button3" type="Button" parent="CanvasLayer/CornerButtons"]
+[node name="Mute" type="Button" parent="CanvasLayer/CornerButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Restart"
-
-[node name="Button2" type="Button" parent="CanvasLayer/CornerButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "pause"
-
-[node name="Button" type="Button" parent="CanvasLayer/CornerButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "play
+text = "Mute
 "
+
+[node name="Play" type="Button" parent="CanvasLayer/CornerButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Play
+Restart"
 
 [node name="Vocals" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(1.27047, 0.965456)
 stream = ExtResource("2_m5xv1")
-autoplay = true
 bus = &"Vocals"
 
 [node name="Drums" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("3_li7ey")
-autoplay = true
 bus = &"Drums"
 
 [node name="Rhytm Guitar" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("4_5845k")
-autoplay = true
 bus = &"Rhytm Guitar"
 
 [node name="Lead Guitar" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("5_ebka7")
-autoplay = true
 bus = &"Lead Guitar"
 
 [node name="Bass" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("6_nkbev")
-autoplay = true
 bus = &"Bass guitar"
 
 [connection signal="button_down" from="CanvasLayer/TopButtons/Button" to="." method="_on_button_button_down"]
@@ -369,3 +359,8 @@ bus = &"Bass guitar"
 [connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider2" to="." method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider3" to="." method="_on_h_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider4" to="." method="_on_h_slider_4_value_changed"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_button_button_down"]
+[connection signal="toggled" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_toggled"]
