@@ -10,16 +10,15 @@ wet = 0.7
 
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_7bspv"]
 resource_name = "PitchShift"
-pitch_scale = 0.01
 
 [sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_45xlo"]
 resource_name = "Phaser"
 range_min_hz = 10.0
+range_max_hz = 10.0
 feedback = 0.3
 
 [sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_txgsb"]
 resource_name = "Amplify"
-volume_db = 24.0
 
 [resource]
 bus/0/effect/0/effect = SubResource("AudioEffectReverb_jagyb")
