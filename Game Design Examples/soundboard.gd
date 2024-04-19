@@ -20,8 +20,7 @@ func _on_v_slider_6_value_changed(value):
 #Mutes
 
 
-func _on_button_button_down():
-	AudioServer.set_bus_mute(0, !AudioServer.is_bus_mute(0))
+
 
 		
 #Effects
@@ -65,12 +64,35 @@ func _on_pause_button_down():
 
 
 func _on_play_button_down():
-	$Vocals.play()
-	$Drums.play()
-	$"Rhytm Guitar".play()
-	$"Lead Guitar".play()
-	$Bass.play()
+	$Mix/Vocals.play()
+	$Mix/Drums.play()
+	$Mix/"Rhytm Guitar".play()
+	$Mix/"Lead Guitar".play()
+	$Mix/Bass.play()
 
 
 func _on_mute_button_down():
 	AudioServer.set_bus_mute(0, !AudioServer.is_bus_mute(0))
+
+
+func _on_vocals_button_down():
+	AudioServer.set_bus_mute(1, !AudioServer.is_bus_mute(1))
+
+
+func _on_drums_button_down():
+	AudioServer.set_bus_mute(2, !AudioServer.is_bus_mute(2))
+
+
+func _on_bass_button_down():
+	AudioServer.set_bus_mute(3, !AudioServer.is_bus_mute(3))
+	
+
+
+
+func _on_g_1_button_down():
+	AudioServer.set_bus_mute(4, !AudioServer.is_bus_mute(4))
+
+
+
+func _on_g_2_button_down():
+	AudioServer.set_bus_mute(5, !AudioServer.is_bus_mute(5))

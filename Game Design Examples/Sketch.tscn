@@ -1,11 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://cruxp1ndaoh82"]
+[gd_scene load_steps=14 format=3 uid="uid://cruxp1ndaoh82"]
 
 [ext_resource type="Script" path="res://soundboard.gd" id="1_qlbbm"]
+[ext_resource type="Script" path="res://Sounds.gd" id="2_d7nk4"]
 [ext_resource type="AudioStream" uid="uid://cj8ek3ajysg5h" path="res://Mix/Vocals.mp3" id="2_m5xv1"]
 [ext_resource type="AudioStream" uid="uid://c6bcssu4ickga" path="res://Mix/drums.mp3" id="3_li7ey"]
 [ext_resource type="AudioStream" uid="uid://bmvjkv3cy05gd" path="res://Mix/Guitar 1.mp3" id="4_5845k"]
 [ext_resource type="AudioStream" uid="uid://dtnw5y3t6a4ti" path="res://Mix/Guitar 2.mp3" id="5_ebka7"]
 [ext_resource type="AudioStream" uid="uid://nrb5o8lbabd0" path="res://Mix/Bass.mp3" id="6_nkbev"]
+[ext_resource type="AudioStream" uid="uid://dbh6jb7ef8moa" path="res://samples/hihat-acoustic02.wav" id="8_0eon4"]
+[ext_resource type="AudioStream" uid="uid://dtrjg8ukvdbrv" path="res://samples/kick-acoustic02.wav" id="9_cls5k"]
+[ext_resource type="AudioStream" uid="uid://2bymn1rqt42x" path="res://samples/snare-acoustic01.wav" id="10_s8o1x"]
+[ext_resource type="AudioStream" uid="uid://cuh83r36pa3eu" path="res://samples/tom-acoustic01.wav" id="11_fg2h6"]
+[ext_resource type="AudioStream" uid="uid://dkaromu1627xk" path="res://samples/crash-acoustic.wav" id="12_6o4ri"]
+[ext_resource type="AudioStream" uid="uid://bqxlgj4qt64fx" path="res://samples/clap-fat.wav" id="13_nmm5x"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_qlbbm")
@@ -127,27 +134,27 @@ offset_bottom = 67.0
 scale = Vector2(2.08249, 2.36094)
 columns = 5
 
-[node name="Button" type="Button" parent="CanvasLayer/TopButtons"]
+[node name="Vocals" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
 text = "Mute
 "
 
-[node name="Button2" type="Button" parent="CanvasLayer/TopButtons"]
+[node name="Drums" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
 text = "Mute
 "
 
-[node name="Button3" type="Button" parent="CanvasLayer/TopButtons"]
+[node name="Bass" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
 text = "Mute
 "
 
-[node name="Button4" type="Button" parent="CanvasLayer/TopButtons"]
+[node name="G1" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
 text = "Mute
 "
 
-[node name="Button5" type="Button" parent="CanvasLayer/TopButtons"]
+[node name="G2" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
 text = "Mute
 "
@@ -155,49 +162,62 @@ text = "Mute
 [node name="SideButtons" type="GridContainer" parent="CanvasLayer"]
 custom_minimum_size = Vector2(100, 100)
 offset_left = 669.0
-offset_top = 139.0
-offset_right = 769.0
-offset_bottom = 240.0
+offset_top = 162.0
+offset_right = 775.0
+offset_bottom = 262.0
 scale = Vector2(3.35477, 5.25002)
 theme_override_constants/h_separation = 7
 theme_override_constants/v_separation = 4
 columns = 3
+script = ExtResource("2_d7nk4")
 
-[node name="Button" type="Button" parent="CanvasLayer/SideButtons"]
+[node name="Hat" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-text = "B1"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 9
+text = "Hat"
+clip_text = true
 
-[node name="Button2" type="Button" parent="CanvasLayer/SideButtons"]
+[node name="Kick" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-text = "B1"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 9
+text = "kick"
+clip_text = true
 
-[node name="Button3" type="Button" parent="CanvasLayer/SideButtons"]
+[node name="Snare" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-text = "B1"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 8
+text = "snare"
+clip_text = true
 
-[node name="Button4" type="Button" parent="CanvasLayer/SideButtons"]
+[node name="Tom" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-text = "B1"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 9
+text = "Tom"
+clip_text = true
 
-[node name="Button5" type="Button" parent="CanvasLayer/SideButtons"]
+[node name="Crash" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-text = "B1"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 8
+text = "Crash"
+clip_text = true
 
-[node name="Button6" type="Button" parent="CanvasLayer/SideButtons"]
+[node name="Clap" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-text = "B1"
-
-[node name="Button7" type="Button" parent="CanvasLayer/SideButtons"]
-layout_mode = 2
-text = "B1"
-
-[node name="Button8" type="Button" parent="CanvasLayer/SideButtons"]
-layout_mode = 2
-text = "B1"
-
-[node name="Button9" type="Button" parent="CanvasLayer/SideButtons"]
-layout_mode = 2
-text = "B1"
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 9
+text = "Clap"
+clip_text = true
 
 [node name="Chanels" type="GridContainer" parent="CanvasLayer"]
 offset_left = 39.0
@@ -319,37 +339,74 @@ size_flags_vertical = 3
 text = "Play
 Restart"
 
-[node name="Vocals" type="AudioStreamPlayer2D" parent="."]
+[node name="Mix" type="Node" parent="."]
+
+[node name="Vocals" type="AudioStreamPlayer2D" parent="Mix"]
 scale = Vector2(1.27047, 0.965456)
 stream = ExtResource("2_m5xv1")
 bus = &"Vocals"
 
-[node name="Drums" type="AudioStreamPlayer2D" parent="."]
+[node name="Drums" type="AudioStreamPlayer2D" parent="Mix"]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("3_li7ey")
 bus = &"Drums"
 
-[node name="Rhytm Guitar" type="AudioStreamPlayer2D" parent="."]
+[node name="Rhytm Guitar" type="AudioStreamPlayer2D" parent="Mix"]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("4_5845k")
 bus = &"Rhytm Guitar"
 
-[node name="Lead Guitar" type="AudioStreamPlayer2D" parent="."]
+[node name="Lead Guitar" type="AudioStreamPlayer2D" parent="Mix"]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("5_ebka7")
 bus = &"Lead Guitar"
 
-[node name="Bass" type="AudioStreamPlayer2D" parent="."]
+[node name="Bass" type="AudioStreamPlayer2D" parent="Mix"]
 scale = Vector2(1.00252, 1)
 stream = ExtResource("6_nkbev")
 bus = &"Bass guitar"
 
-[connection signal="button_down" from="CanvasLayer/TopButtons/Button" to="." method="_on_button_button_down"]
-[connection signal="toggled" from="CanvasLayer/TopButtons/Button" to="." method="_on_button_toggled"]
-[connection signal="button_down" from="CanvasLayer/TopButtons/Button2" to="." method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/TopButtons/Button3" to="." method="_on_button_3_button_down"]
-[connection signal="button_down" from="CanvasLayer/TopButtons/Button4" to="." method="_on_button_4_button_down"]
-[connection signal="button_down" from="CanvasLayer/TopButtons/Button5" to="." method="_on_button_5_button_down"]
+[node name="Sounds" type="Node" parent="."]
+
+[node name="Hihat" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("8_0eon4")
+
+[node name="kick" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("9_cls5k")
+
+[node name="snare" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("10_s8o1x")
+
+[node name="Tom" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("11_fg2h6")
+
+[node name="Crash" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("12_6o4ri")
+
+[node name="Clap" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("13_nmm5x")
+
+[connection signal="button_down" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_vocals_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_button_button_down"]
+[connection signal="toggled" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_button_toggled"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Drums" to="." method="_on_drums_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Drums" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Bass" to="." method="_on_bass_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Bass" to="." method="_on_button_3_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_g_1_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_button_4_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_button_5_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_hat_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_kick_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_button_2_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="." method="_on_snare_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="CanvasLayer/SideButtons" method="_on_snare_button_down"]
+[connection signal="button_up" from="CanvasLayer/SideButtons/Snare" to="CanvasLayer/SideButtons" method="_on_snare_button_up"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Tom" to="CanvasLayer/SideButtons" method="_on_tom_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Crash" to="CanvasLayer/SideButtons" method="_on_crash_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Clap" to="CanvasLayer/SideButtons" method="_on_clap_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider2" to="." method="_on_v_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider3" to="." method="_on_v_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider4" to="." method="_on_v_slider_4_value_changed"]
@@ -359,8 +416,8 @@ bus = &"Bass guitar"
 [connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider2" to="." method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider3" to="." method="_on_h_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_button_button_down"]
 [connection signal="toggled" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_toggled"]
