@@ -356,6 +356,10 @@ bus = &"Bass guitar"
 
 [connection signal="button_down" from="CanvasLayer/TopButtons/Button" to="." method="_on_button_button_down"]
 [connection signal="toggled" from="CanvasLayer/TopButtons/Button" to="." method="_on_button_toggled"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Button3" to="." method="_on_button_3_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Button4" to="." method="_on_button_4_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Button5" to="." method="_on_button_5_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider2" to="." method="_on_v_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider3" to="." method="_on_v_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider4" to="." method="_on_v_slider_4_value_changed"]
