@@ -44,13 +44,13 @@ func _on_h_slider_value_changed(value): # Amplify
 
 
 #Pause which doesn't work somehow
-
-func _on_pause_button_down():
-	$Vocals.get_stream_paused()
-	$Drums.get_stream_paused()
-	$"Rhytm Guitar".get_stream_paused()
-	$"Lead Guitar".get_stream_paused()
-	$Bass.get_stream_paused()
+#
+#func _on_pause_button_down():ьгеу
+	#$Vocals.get_stream_paused()
+	#$Drums.get_stream_paused()
+	#$"Rhytm Guitar".get_stream_paused()
+	#$"Lead Guitar".get_stream_paused()
+	#$Bass.get_stream_paused()
 
 
 #Play Button
