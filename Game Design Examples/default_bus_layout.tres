@@ -83,10 +83,8 @@ resource_name = "Amplify"
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_6aul7"]
 resource_name = "Reverb"
 room_size = 0.0
-damping = 0.1
-spread = 0.4
-hipass = 0.3
-wet = 0.7
+hipass = 1.0
+wet = 0.0
 
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_yshxd"]
 resource_name = "PitchShift"
@@ -103,9 +101,7 @@ resource_name = "Amplify"
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_8xmac"]
 resource_name = "Reverb"
 room_size = 0.0
-damping = 0.1
-spread = 0.4
-hipass = 0.3
+hipass = 1.0
 wet = 0.7
 
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_fe3df"]
