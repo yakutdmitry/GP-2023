@@ -1,11 +1,15 @@
-[gd_scene load_steps=14 format=3 uid="uid://cruxp1ndaoh82"]
+[gd_scene load_steps=18 format=3 uid="uid://cruxp1ndaoh82"]
 
 [ext_resource type="Script" path="res://soundboard.gd" id="1_qlbbm"]
 [ext_resource type="Script" path="res://Sounds.gd" id="2_d7nk4"]
 [ext_resource type="AudioStream" uid="uid://cj8ek3ajysg5h" path="res://Mix/Vocals.mp3" id="2_m5xv1"]
+[ext_resource type="Script" path="res://Chanel Buttons.gd" id="3_km7cg"]
 [ext_resource type="AudioStream" uid="uid://c6bcssu4ickga" path="res://Mix/drums.mp3" id="3_li7ey"]
+[ext_resource type="Script" path="res://Master Sliders FX.gd" id="3_nyeb0"]
 [ext_resource type="AudioStream" uid="uid://bmvjkv3cy05gd" path="res://Mix/Guitar 1.mp3" id="4_5845k"]
+[ext_resource type="Script" path="res://Vocal sliders FX.gd" id="4_uvv03"]
 [ext_resource type="AudioStream" uid="uid://dtnw5y3t6a4ti" path="res://Mix/Guitar 2.mp3" id="5_ebka7"]
+[ext_resource type="Script" path="res://Drums.gd" id="5_gxy8p"]
 [ext_resource type="AudioStream" uid="uid://nrb5o8lbabd0" path="res://Mix/Bass.mp3" id="6_nkbev"]
 [ext_resource type="AudioStream" uid="uid://dbh6jb7ef8moa" path="res://samples/hihat-acoustic02.wav" id="8_0eon4"]
 [ext_resource type="AudioStream" uid="uid://dtrjg8ukvdbrv" path="res://samples/kick-acoustic02.wav" id="9_cls5k"]
@@ -262,26 +266,28 @@ size_flags_stretch_ratio = 0.0
 max_value = 1.0
 step = 0.1
 
-[node name="FXSliders" type="GridContainer" parent="CanvasLayer"]
+[node name="Master Sliders FX" type="GridContainer" parent="CanvasLayer"]
+visible = false
 offset_left = 669.0
 offset_top = 749.0
 offset_right = 709.0
 offset_bottom = 825.0
 scale = Vector2(5.05838, 3.30714)
+script = ExtResource("3_nyeb0")
 
-[node name="HSlider" type="HSlider" parent="CanvasLayer/FXSliders"]
+[node name="HSlider" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = -24.0
 max_value = 24.0
 
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/FXSliders"]
+[node name="HSlider2" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
 layout_mode = 2
 size_flags_horizontal = 3
 max_value = 5.0
 step = 0.1
 
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/FXSliders"]
+[node name="HSlider3" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = 10.0
@@ -289,7 +295,7 @@ max_value = 1600.0
 step = 10.0
 value = 10.0
 
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/FXSliders"]
+[node name="HSlider4" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = 0.5
@@ -297,25 +303,138 @@ max_value = 1.5
 step = 0.1
 value = 1.0
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer"]
+[node name="Vocal sliders FX" type="GridContainer" parent="CanvasLayer"]
+visible = false
+offset_left = 669.0
+offset_top = 749.0
+offset_right = 709.0
+offset_bottom = 825.0
+scale = Vector2(5.05838, 3.30714)
+script = ExtResource("4_uvv03")
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -24.0
+max_value = 24.0
+
+[node name="HSlider2" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 5.0
+step = 0.1
+
+[node name="HSlider3" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 10.0
+max_value = 1600.0
+step = 10.0
+value = 10.0
+
+[node name="HSlider4" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.5
+max_value = 1.5
+step = 0.1
+value = 1.0
+
+[node name="Drums" type="GridContainer" parent="CanvasLayer"]
+visible = false
+offset_left = 669.0
+offset_top = 749.0
+offset_right = 709.0
+offset_bottom = 825.0
+scale = Vector2(5.05838, 3.30714)
+script = ExtResource("5_gxy8p")
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/Drums"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -24.0
+max_value = 24.0
+
+[node name="HSlider2" type="HSlider" parent="CanvasLayer/Drums"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 5.0
+step = 0.1
+
+[node name="HSlider3" type="HSlider" parent="CanvasLayer/Drums"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 10.0
+max_value = 1600.0
+step = 10.0
+value = 10.0
+
+[node name="HSlider4" type="HSlider" parent="CanvasLayer/Drums"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.5
+max_value = 1.5
+step = 0.1
+value = 1.0
+
+[node name="Bass" type="GridContainer" parent="CanvasLayer"]
+visible = false
+offset_left = 669.0
+offset_top = 749.0
+offset_right = 709.0
+offset_bottom = 825.0
+scale = Vector2(5.05838, 3.30714)
+script = ExtResource("5_gxy8p")
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/Bass"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -24.0
+max_value = 24.0
+
+[node name="HSlider2" type="HSlider" parent="CanvasLayer/Bass"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 5.0
+step = 0.1
+
+[node name="HSlider3" type="HSlider" parent="CanvasLayer/Bass"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 10.0
+max_value = 1600.0
+step = 10.0
+value = 10.0
+
+[node name="HSlider4" type="HSlider" parent="CanvasLayer/Bass"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.5
+max_value = 1.5
+step = 0.1
+value = 1.0
+
+[node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
 offset_left = 669.0
 offset_top = 683.0
 offset_right = 848.0
 offset_bottom = 749.0
 scale = Vector2(1.8677, 0.90202)
 columns = 2
+script = ExtResource("3_km7cg")
 
-[node name="Button" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Choose Track
-"
-
-[node name="Button2" type="Button" parent="CanvasLayer/GridContainer"]
+[node name="Button2" type="Button" parent="CanvasLayer/Chanel Buttons"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Master
 "
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Chanel Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "
+Choose track"
 
 [node name="CornerButtons" type="GridContainer" parent="CanvasLayer"]
 layout_direction = 2
@@ -398,8 +517,8 @@ stream = ExtResource("13_nmm5x")
 [connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_button_4_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_button_5_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_hat_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_kick_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_button_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="." method="_on_snare_button_down"]
@@ -413,10 +532,39 @@ stream = ExtResource("13_nmm5x")
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider4" to="." method="_on_v_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider5" to="." method="_on_v_slider_5_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider6" to="." method="_on_v_slider_6_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/FXSliders/HSlider4" to="." method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="." method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider2" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider2" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider3" to="." method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider3" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider4" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider" to="CanvasLayer/Drums" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider2" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider2" to="CanvasLayer/Drums" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider3" to="." method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider3" to="CanvasLayer/Drums" method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider4" to="." method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Drums/HSlider4" to="CanvasLayer/Drums" method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider" to="CanvasLayer/Bass" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider2" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider2" to="CanvasLayer/Bass" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider3" to="." method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider3" to="CanvasLayer/Bass" method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider4" to="." method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Bass/HSlider4" to="CanvasLayer/Bass" method="_on_h_slider_4_value_changed"]
+[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Button2" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]

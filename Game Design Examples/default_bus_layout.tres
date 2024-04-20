@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=5 format=3 uid="uid://d0tiv0n6oek2y"]
+[gd_resource type="AudioBusLayout" load_steps=25 format=3 uid="uid://d0tiv0n6oek2y"]
 
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_jagyb"]
 resource_name = "Reverb"
@@ -20,6 +20,81 @@ feedback = 0.3
 [sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_txgsb"]
 resource_name = "Amplify"
 
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_5tp50"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_bwn8w"]
+resource_name = "PitchShift"
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_ks2ov"]
+resource_name = "Phaser"
+range_min_hz = 10.0
+range_max_hz = 10.0
+feedback = 0.3
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_v4y3v"]
+resource_name = "Amplify"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_u23oy"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_10vxr"]
+resource_name = "PitchShift"
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_pvdk2"]
+resource_name = "Phaser"
+range_min_hz = 10.0
+range_max_hz = 10.0
+feedback = 0.3
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_maq6y"]
+resource_name = "Amplify"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_1wm3y"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_vd8sp"]
+resource_name = "PitchShift"
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_empbg"]
+resource_name = "Phaser"
+range_min_hz = 10.0
+range_max_hz = 10.0
+feedback = 0.3
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_ves8y"]
+resource_name = "Amplify"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_6aul7"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_yshxd"]
+resource_name = "PitchShift"
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_jgkor"]
+resource_name = "Phaser"
+range_min_hz = 10.0
+range_max_hz = 10.0
+feedback = 0.3
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_r6dl3"]
+resource_name = "Amplify"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_8xmac"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_fe3df"]
+resource_name = "PitchShift"
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_rqlti"]
+resource_name = "Phaser"
+range_min_hz = 10.0
+range_max_hz = 10.0
+feedback = 0.3
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_eldic"]
+resource_name = "Amplify"
+
 [resource]
 bus/0/effect/0/effect = SubResource("AudioEffectReverb_jagyb")
 bus/0/effect/0/enabled = true
@@ -35,27 +110,67 @@ bus/1/mute = false
 bus/1/bypass_fx = false
 bus/1/volume_db = -0.130497
 bus/1/send = &"Master"
+bus/1/effect/0/effect = SubResource("AudioEffectReverb_5tp50")
+bus/1/effect/0/enabled = true
+bus/1/effect/1/effect = SubResource("AudioEffectPitchShift_bwn8w")
+bus/1/effect/1/enabled = true
+bus/1/effect/2/effect = SubResource("AudioEffectPhaser_ks2ov")
+bus/1/effect/2/enabled = true
+bus/1/effect/3/effect = SubResource("AudioEffectAmplify_v4y3v")
+bus/1/effect/3/enabled = true
 bus/2/name = &"Drums"
 bus/2/solo = false
 bus/2/mute = false
 bus/2/bypass_fx = false
 bus/2/volume_db = 0.0
 bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectReverb_u23oy")
+bus/2/effect/0/enabled = true
+bus/2/effect/1/effect = SubResource("AudioEffectPitchShift_10vxr")
+bus/2/effect/1/enabled = true
+bus/2/effect/2/effect = SubResource("AudioEffectPhaser_pvdk2")
+bus/2/effect/2/enabled = true
+bus/2/effect/3/effect = SubResource("AudioEffectAmplify_maq6y")
+bus/2/effect/3/enabled = true
 bus/3/name = &"Bass guitar"
 bus/3/solo = false
 bus/3/mute = false
 bus/3/bypass_fx = false
 bus/3/volume_db = 0.0
 bus/3/send = &"Master"
+bus/3/effect/0/effect = SubResource("AudioEffectReverb_1wm3y")
+bus/3/effect/0/enabled = true
+bus/3/effect/1/effect = SubResource("AudioEffectPitchShift_vd8sp")
+bus/3/effect/1/enabled = true
+bus/3/effect/2/effect = SubResource("AudioEffectPhaser_empbg")
+bus/3/effect/2/enabled = true
+bus/3/effect/3/effect = SubResource("AudioEffectAmplify_ves8y")
+bus/3/effect/3/enabled = true
 bus/4/name = &"Rhytm Guitar"
 bus/4/solo = false
 bus/4/mute = false
 bus/4/bypass_fx = false
 bus/4/volume_db = -0.130497
 bus/4/send = &"Master"
+bus/4/effect/0/effect = SubResource("AudioEffectReverb_6aul7")
+bus/4/effect/0/enabled = true
+bus/4/effect/1/effect = SubResource("AudioEffectPitchShift_yshxd")
+bus/4/effect/1/enabled = true
+bus/4/effect/2/effect = SubResource("AudioEffectPhaser_jgkor")
+bus/4/effect/2/enabled = true
+bus/4/effect/3/effect = SubResource("AudioEffectAmplify_r6dl3")
+bus/4/effect/3/enabled = true
 bus/5/name = &"Lead Guitar"
 bus/5/solo = false
 bus/5/mute = false
 bus/5/bypass_fx = false
 bus/5/volume_db = 0.0694828
 bus/5/send = &"Master"
+bus/5/effect/0/effect = SubResource("AudioEffectReverb_8xmac")
+bus/5/effect/0/enabled = true
+bus/5/effect/1/effect = SubResource("AudioEffectPitchShift_fe3df")
+bus/5/effect/1/enabled = true
+bus/5/effect/2/effect = SubResource("AudioEffectPhaser_rqlti")
+bus/5/effect/2/enabled = true
+bus/5/effect/3/effect = SubResource("AudioEffectAmplify_eldic")
+bus/5/effect/3/enabled = true
