@@ -1,6 +1,5 @@
 extends Node2D
 
- #Chanel Volumes 
 
 func _on_v_slider_2_value_changed(value):
 	AudioServer.set_bus_volume_db(1, linear_to_db(value))
@@ -20,19 +19,6 @@ func _on_v_slider_6_value_changed(value):
 #Effects
 
 
-
-
-#Pause which doesn't work somehow
-#
-#func _on_pause_button_down():ьгеу
-	#$Vocals.get_stream_paused()
-	#$Drums.get_stream_paused()
-	#$"Rhytm Guitar".get_stream_paused()
-	#$"Lead Guitar".get_stream_paused()
-	#$Bass.get_stream_paused()
-
-
-#Play Button
 
 func _on_play_button_down():
 	$Mix/Vocals.play()

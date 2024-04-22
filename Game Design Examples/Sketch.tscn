@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cruxp1ndaoh82"]
+[gd_scene load_steps=16 format=3 uid="uid://cruxp1ndaoh82"]
 
 [ext_resource type="Script" path="res://soundboard.gd" id="1_qlbbm"]
 [ext_resource type="Script" path="res://Sounds.gd" id="2_d7nk4"]
@@ -7,14 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://c6bcssu4ickga" path="res://Mix/drums.mp3" id="3_li7ey"]
 [ext_resource type="Script" path="res://Master Sliders FX.gd" id="3_nyeb0"]
 [ext_resource type="AudioStream" uid="uid://bmvjkv3cy05gd" path="res://Mix/Guitar 1.mp3" id="4_5845k"]
-[ext_resource type="Script" path="res://Vocal sliders FX.gd" id="4_uvv03"]
 [ext_resource type="AudioStream" uid="uid://dtnw5y3t6a4ti" path="res://Mix/Guitar 2.mp3" id="5_ebka7"]
-[ext_resource type="Script" path="res://Drums.gd" id="5_gxy8p"]
 [ext_resource type="AudioStream" uid="uid://nrb5o8lbabd0" path="res://Mix/Bass.mp3" id="6_nkbev"]
-[ext_resource type="Script" path="res://Bass.gd" id="6_t7sjp"]
-[ext_resource type="Script" path="res://G1.gd" id="7_euefd"]
 [ext_resource type="AudioStream" uid="uid://dbh6jb7ef8moa" path="res://samples/hihat-acoustic02.wav" id="8_0eon4"]
-[ext_resource type="Script" path="res://G2.gd" id="8_hswq0"]
 [ext_resource type="AudioStream" uid="uid://dtrjg8ukvdbrv" path="res://samples/kick-acoustic02.wav" id="9_cls5k"]
 [ext_resource type="AudioStream" uid="uid://2bymn1rqt42x" path="res://samples/snare-acoustic01.wav" id="10_s8o1x"]
 [ext_resource type="AudioStream" uid="uid://cuh83r36pa3eu" path="res://samples/tom-acoustic01.wav" id="11_fg2h6"]
@@ -22,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://bqxlgj4qt64fx" path="res://samples/clap-fat.wav" id="13_nmm5x"]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(-30.9283, 42.2318)
 script = ExtResource("1_qlbbm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -169,10 +165,10 @@ text = "Mute
 [node name="SideButtons" type="GridContainer" parent="CanvasLayer"]
 custom_minimum_size = Vector2(100, 100)
 offset_left = 669.0
-offset_top = 162.0
+offset_top = 187.0
 offset_right = 775.0
-offset_bottom = 262.0
-scale = Vector2(3.35477, 5.25002)
+offset_bottom = 287.0
+scale = Vector2(3.24555, 4.38029)
 theme_override_constants/h_separation = 7
 theme_override_constants/v_separation = 4
 columns = 3
@@ -180,8 +176,6 @@ script = ExtResource("2_d7nk4")
 
 [node name="Hat" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 theme_override_font_sizes/font_size = 9
 text = "Hat"
 clip_text = true
@@ -229,45 +223,65 @@ clip_text = true
 [node name="Chanels" type="GridContainer" parent="CanvasLayer"]
 offset_left = 39.0
 offset_top = 162.0
-offset_right = 135.0
-offset_bottom = 189.0
-scale = Vector2(4.76855, 12.7349)
+offset_right = 155.0
+offset_bottom = 198.0
+scale = Vector2(4.60964, 22.9719)
 columns = 5
 
 [node name="VSlider2" type="VSlider" parent="CanvasLayer/Chanels"]
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-max_value = 1.0
+max_value = 2.0
 step = 0.01
 
 [node name="VSlider3" type="VSlider" parent="CanvasLayer/Chanels"]
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-max_value = 1.0
+max_value = 2.0
 step = 0.01
 
 [node name="VSlider4" type="VSlider" parent="CanvasLayer/Chanels"]
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-max_value = 1.0
+max_value = 2.0
 step = 0.01
 
 [node name="VSlider5" type="VSlider" parent="CanvasLayer/Chanels"]
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-max_value = 1.0
+max_value = 2.0
 step = 0.01
 
 [node name="VSlider6" type="VSlider" parent="CanvasLayer/Chanels"]
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-max_value = 1.0
+max_value = 2.0
 step = 0.1
+
+[node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
+offset_left = 669.0
+offset_top = 683.0
+offset_right = 848.0
+offset_bottom = 749.0
+scale = Vector2(1.8677, 0.90202)
+columns = 2
+script = ExtResource("3_km7cg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Chanel Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Choose track"
+
+[node name="Chanel" type="Button" parent="CanvasLayer/Chanel Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="Master Sliders FX" type="GridContainer" parent="CanvasLayer"]
 offset_left = 669.0
@@ -305,254 +319,6 @@ max_value = 1.5
 step = 0.1
 value = 1.0
 
-[node name="Vocal sliders FX" type="GridContainer" parent="CanvasLayer"]
-visible = false
-offset_left = 669.0
-offset_top = 749.0
-offset_right = 709.0
-offset_bottom = 825.0
-scale = Vector2(5.05838, 3.30714)
-script = ExtResource("4_uvv03")
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = -24.0
-max_value = 24.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 5.0
-step = 0.1
-
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 10.0
-max_value = 1600.0
-step = 10.0
-value = 10.0
-
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/Vocal sliders FX"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 0.5
-max_value = 1.5
-step = 0.1
-value = 1.0
-
-[node name="Drums" type="GridContainer" parent="CanvasLayer"]
-visible = false
-offset_left = 669.0
-offset_top = 749.0
-offset_right = 709.0
-offset_bottom = 825.0
-scale = Vector2(5.05838, 3.30714)
-script = ExtResource("5_gxy8p")
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/Drums"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = -24.0
-max_value = 24.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/Drums"]
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 5.0
-step = 0.1
-
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/Drums"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 10.0
-max_value = 1600.0
-step = 10.0
-value = 10.0
-
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/Drums"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 0.5
-max_value = 1.5
-step = 0.1
-value = 1.0
-
-[node name="Bass" type="GridContainer" parent="CanvasLayer"]
-visible = false
-offset_left = 669.0
-offset_top = 749.0
-offset_right = 709.0
-offset_bottom = 825.0
-scale = Vector2(5.05838, 3.30714)
-script = ExtResource("6_t7sjp")
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/Bass"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = -24.0
-max_value = 24.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/Bass"]
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 5.0
-step = 0.1
-
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/Bass"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 10.0
-max_value = 1600.0
-step = 10.0
-value = 10.0
-
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/Bass"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 0.5
-max_value = 1.5
-step = 0.1
-value = 1.0
-
-[node name="G1" type="GridContainer" parent="CanvasLayer"]
-visible = false
-offset_left = 669.0
-offset_top = 749.0
-offset_right = 709.0
-offset_bottom = 825.0
-scale = Vector2(5.05838, 3.30714)
-script = ExtResource("7_euefd")
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/G1"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = -24.0
-max_value = 24.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/G1"]
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 5.0
-step = 0.1
-
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/G1"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 10.0
-max_value = 1600.0
-step = 10.0
-value = 10.0
-
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/G1"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 0.5
-max_value = 1.5
-step = 0.1
-value = 1.0
-
-[node name="G2" type="GridContainer" parent="CanvasLayer"]
-visible = false
-offset_left = 669.0
-offset_top = 749.0
-offset_right = 709.0
-offset_bottom = 825.0
-scale = Vector2(5.05838, 3.30714)
-script = ExtResource("8_hswq0")
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/G2"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = -24.0
-max_value = 24.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/G2"]
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 5.0
-step = 0.1
-
-[node name="HSlider3" type="HSlider" parent="CanvasLayer/G2"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 10.0
-max_value = 1600.0
-step = 10.0
-value = 10.0
-
-[node name="HSlider4" type="HSlider" parent="CanvasLayer/G2"]
-layout_mode = 2
-size_flags_horizontal = 3
-min_value = 0.5
-max_value = 1.5
-step = 0.1
-value = 1.0
-
-[node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
-offset_left = 669.0
-offset_top = 683.0
-offset_right = 848.0
-offset_bottom = 749.0
-scale = Vector2(1.8677, 0.90202)
-columns = 2
-script = ExtResource("3_km7cg")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Chanel Buttons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Choose track"
-
-[node name="Mater" type="Button" parent="CanvasLayer/Chanel Buttons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Master
-"
-
-[node name="Vocals" type="Button" parent="CanvasLayer/Chanel Buttons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Vocals
-"
-
-[node name="Drums" type="Button" parent="CanvasLayer/Chanel Buttons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Drums
-
-"
-
-[node name="Bass" type="Button" parent="CanvasLayer/Chanel Buttons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Bass
-"
-
-[node name="G1" type="Button" parent="CanvasLayer/Chanel Buttons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "G1
-"
-
-[node name="G2" type="Button" parent="CanvasLayer/Chanel Buttons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "G2
-"
-
 [node name="CornerButtons" type="GridContainer" parent="CanvasLayer"]
 layout_direction = 2
 offset_left = 669.0
@@ -575,6 +341,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Play
 Restart"
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Mix" type="Node" parent="."]
 
@@ -649,67 +421,19 @@ stream = ExtResource("13_nmm5x")
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider4" to="." method="_on_v_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider5" to="." method="_on_v_slider_5_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider6" to="." method="_on_v_slider_6_value_changed"]
+[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Chanel" to="CanvasLayer/Chanel Buttons" method="_on_chanel_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="." method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="." method="_on_h_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider2" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider3" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Vocal sliders FX/HSlider4" to="CanvasLayer/Vocal sliders FX" method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider" to="CanvasLayer/Drums" method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider2" to="CanvasLayer/Drums" method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider3" to="CanvasLayer/Drums" method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Drums/HSlider4" to="CanvasLayer/Drums" method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider" to="CanvasLayer/Bass" method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider2" to="CanvasLayer/Bass" method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider3" to="CanvasLayer/Bass" method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Bass/HSlider4" to="CanvasLayer/Bass" method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider" to="CanvasLayer/G1" method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider2" to="CanvasLayer/G1" method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider3" to="CanvasLayer/G1" method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G1/HSlider4" to="CanvasLayer/G1" method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider" to="CanvasLayer/G2" method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider2" to="CanvasLayer/G2" method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider3" to="CanvasLayer/G2" method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/G2/HSlider4" to="CanvasLayer/G2" method="_on_h_slider_4_value_changed"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Mater" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Mater" to="CanvasLayer/Chanel Buttons" method="_on_mater_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Vocals" to="CanvasLayer/Chanel Buttons" method="_on_vocals_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Vocals" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Drums" to="CanvasLayer/Chanel Buttons" method="_on_vocals_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Drums" to="CanvasLayer/Chanel Buttons" method="_on_drums_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Drums" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Bass" to="CanvasLayer/Chanel Buttons" method="_on_bass_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/Bass" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/G1" to="CanvasLayer/Chanel Buttons" method="_on_g_1_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/G1" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/G2" to="CanvasLayer/Chanel Buttons" method="_on_g_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/Chanel Buttons/G2" to="CanvasLayer/Chanel Buttons" method="_on_button_2_button_down"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_4_value_changed"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
