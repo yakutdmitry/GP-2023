@@ -1,8 +1,5 @@
 extends GridContainer
 
-
-
-
 func _on_hat_button_down():
 	$"../../Sounds/Hihat".play()
 

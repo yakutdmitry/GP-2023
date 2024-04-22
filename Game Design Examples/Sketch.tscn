@@ -138,26 +138,31 @@ columns = 5
 
 [node name="Vocals" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.513726, 0.603922, 1)
 text = "Mute
 "
 
 [node name="Drums" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.513726, 0.603922, 1)
 text = "Mute
 "
 
 [node name="Bass" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.513726, 0.603922, 1)
 text = "Mute
 "
 
 [node name="G1" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.513726, 0.603922, 1)
 text = "Mute
 "
 
 [node name="G2" type="Button" parent="CanvasLayer/TopButtons"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.513726, 0.603922, 1)
 text = "Mute
 "
 
@@ -175,7 +180,20 @@ script = ExtResource("2_d7nk4")
 
 [node name="Hat" type="Button" parent="CanvasLayer/SideButtons"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
+theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
+theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
+theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
+theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
+theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
+theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
 text = "Hat"
 clip_text = true
 
@@ -183,7 +201,20 @@ clip_text = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
+theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
+theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
+theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
+theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
+theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
+theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
 text = "kick"
 clip_text = true
 
@@ -191,6 +222,19 @@ clip_text = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
+theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
+theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
+theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
+theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
+theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
+theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 8
 text = "snare"
 clip_text = true
@@ -199,7 +243,20 @@ clip_text = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
+theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
+theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
+theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
+theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
+theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
+theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
 text = "Tom"
 clip_text = true
 
@@ -207,6 +264,19 @@ clip_text = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
+theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
+theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
+theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
+theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
+theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
+theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 8
 text = "Crash"
 clip_text = true
@@ -215,7 +285,20 @@ clip_text = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
+theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
+theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
+theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
+theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
+theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
+theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
 text = "Clap"
 clip_text = true
 
@@ -228,6 +311,7 @@ scale = Vector2(4.60964, 22.9719)
 columns = 5
 
 [node name="VSlider2" type="VSlider" parent="CanvasLayer/Chanels"]
+modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
@@ -235,6 +319,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider3" type="VSlider" parent="CanvasLayer/Chanels"]
+modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
@@ -242,6 +327,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider4" type="VSlider" parent="CanvasLayer/Chanels"]
+modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
@@ -249,6 +335,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider5" type="VSlider" parent="CanvasLayer/Chanels"]
+modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
@@ -256,6 +343,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider6" type="VSlider" parent="CanvasLayer/Chanels"]
+modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
@@ -290,18 +378,24 @@ offset_bottom = 825.0
 scale = Vector2(5.05838, 3.30714)
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
+modulate = Color(0, 0.627451, 0.568627, 1)
+self_modulate = Color(0, 0.529412, 0.529412, 1)
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = -24.0
 max_value = 24.0
 
 [node name="HSlider2" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
+modulate = Color(0, 0.627451, 0.568627, 1)
+self_modulate = Color(0, 0.529412, 0.529412, 1)
 layout_mode = 2
 size_flags_horizontal = 3
 max_value = 5.0
 step = 0.1
 
 [node name="HSlider3" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
+modulate = Color(0, 0.627451, 0.568627, 1)
+self_modulate = Color(0, 0.529412, 0.529412, 1)
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = 10.0
@@ -310,6 +404,8 @@ step = 10.0
 value = 10.0
 
 [node name="HSlider4" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
+modulate = Color(0, 0.627451, 0.568627, 1)
+self_modulate = Color(0, 0.529412, 0.529412, 1)
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = 0.5
@@ -330,6 +426,7 @@ columns = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.647059, 0.160784, 1)
 text = "Mute
 "
 
@@ -337,6 +434,7 @@ text = "Mute
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.647059, 0.160784, 1)
 text = "Play
 Restart"
 
@@ -421,17 +519,17 @@ stream = ExtResource("13_nmm5x")
 [connection signal="value_changed" from="CanvasLayer/Chanels/VSlider6" to="." method="_on_v_slider_6_value_changed"]
 [connection signal="button_down" from="CanvasLayer/Chanel Buttons/Chanel" to="CanvasLayer/Chanel Buttons" method="_on_chanel_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="." method="_on_h_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider2" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="." method="_on_h_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider3" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_3_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_4_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
