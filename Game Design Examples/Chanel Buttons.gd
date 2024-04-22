@@ -9,7 +9,7 @@ func _ready(): #checking if loop works
 	$Chanel.text = ChanelsNames[0]
 	
 func _on_chanel_button_down(): 
-	if chanel_num == 5:
+	if chanel_num == len(ChanelsNames) - 1:
 		chanel_num = 0
 	else:
 		chanel_num += 1
