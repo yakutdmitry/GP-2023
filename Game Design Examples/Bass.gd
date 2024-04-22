@@ -19,6 +19,6 @@ func _on_h_slider_3_value_changed(value): #phazer
 
 
 func _on_h_slider_value_changed(value): # Amplify
-	var Amplify:AudioEffect = AudioServer.get_bus_effect(3, 3)
+	var Amplify:AudioEffect = AudioServer.get_bus_effect(33)
 	
 	Amplify.volume_db = value

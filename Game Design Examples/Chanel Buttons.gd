@@ -1,20 +1,22 @@
 extends GridContainer
-var chanel_num = 0
-var num_chanels = 5
-var ChanelsNames = ["master", "vocals", "drums", "bass", "G1", "G2"]
+var chanel_num = 0 #index of chanel set to 0 at the beginning
+var num_chanels = 5 # used for "for" loop 
+var ChanelsNames = ["master", "vocals", "drums", "bass", "G1", "G2"] #text for button
 
-func _ready():
+func _ready(): #checking if loop works
 	for i in range(len(ChanelsNames)):
 		print(i , " " , ChanelsNames[i])
 	$Chanel.text = ChanelsNames[0]
 	
-func _on_chanel_button_down():
+func _on_chanel_button_down(): 
 	if chanel_num == 5:
 		chanel_num = 0
 	else:
 		chanel_num += 1
-	$Chanel.text = ChanelsNames[chanel_num]
+	$Chanel.text = ChanelsNames[chanel_num] #assing chanel name by calling a list and object's index
 	
+	#Optimized chanel effects (before it was 6 grid containers with simular code but different numbers for busses
+	# now it bus index using chanel_nim
 func _on_h_slider_4_value_changed(value): #pitch Shifter
 	var pitch:AudioEffectPitchShift = AudioServer.get_bus_effect(chanel_num, 1)
 	

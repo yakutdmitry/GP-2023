@@ -6,10 +6,8 @@ extends GridContainer
 func _on_hat_button_down():
 	$"../../Sounds/Hihat".play()
 
-
 func _on_kick_button_down():
 	$"../../Sounds/kick".play()
-
 
 func _on_snare_button_down():
 	$"../../Sounds/snare".play()

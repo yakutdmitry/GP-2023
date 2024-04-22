@@ -1,11 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://cruxp1ndaoh82"]
+[gd_scene load_steps=15 format=3 uid="uid://cruxp1ndaoh82"]
 
 [ext_resource type="Script" path="res://soundboard.gd" id="1_qlbbm"]
 [ext_resource type="Script" path="res://Sounds.gd" id="2_d7nk4"]
 [ext_resource type="AudioStream" uid="uid://cj8ek3ajysg5h" path="res://Mix/Vocals.mp3" id="2_m5xv1"]
 [ext_resource type="Script" path="res://Chanel Buttons.gd" id="3_km7cg"]
 [ext_resource type="AudioStream" uid="uid://c6bcssu4ickga" path="res://Mix/drums.mp3" id="3_li7ey"]
-[ext_resource type="Script" path="res://Master Sliders FX.gd" id="3_nyeb0"]
 [ext_resource type="AudioStream" uid="uid://bmvjkv3cy05gd" path="res://Mix/Guitar 1.mp3" id="4_5845k"]
 [ext_resource type="AudioStream" uid="uid://dtnw5y3t6a4ti" path="res://Mix/Guitar 2.mp3" id="5_ebka7"]
 [ext_resource type="AudioStream" uid="uid://nrb5o8lbabd0" path="res://Mix/Bass.mp3" id="6_nkbev"]
@@ -289,7 +288,6 @@ offset_top = 749.0
 offset_right = 709.0
 offset_bottom = 825.0
 scale = Vector2(5.05838, 3.30714)
-script = ExtResource("3_nyeb0")
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
 layout_mode = 2
