@@ -1,4 +1,4 @@
-Your Readme File looks amazing but sry I need to edit it to have some sort of documentation for my project...
+SRY I deleted the original file...
 
 The main idea of this project is that in case music band needs to practioce and they for example don't have a drummer and basist, they can mute all chanels except drums and bass in the song and practioce.
 
@@ -40,7 +40,7 @@ Next, for loop was created just to check if everything works and right index is 
 
    ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/b53e7cbc-39ab-4dd6-8242-1b5fa69a57be)
 
-
-
+Project is made By Yakut Dmitry TU984/1 
+Game programming 1
 
 
