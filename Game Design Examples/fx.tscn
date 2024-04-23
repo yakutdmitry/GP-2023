@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqgblog57tkvq"]
+
+[ext_resource type="Script" path="res://HSlider.gd" id="1_3rj1s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="HSlider" type="HSlider" parent="."]
+modulate = Color(0, 0.627451, 0.568627, 1)
+self_modulate = Color(0, 0.529412, 0.529412, 1)
+size_flags_horizontal = 3
+min_value = -24.0
+max_value = 24.0
+script = ExtResource("1_3rj1s")
+
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]
