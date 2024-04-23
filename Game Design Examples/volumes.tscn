@@ -5,7 +5,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Volume" type="VSlider" parent="."]
-modulate = Color(0.682353, 0.141176, 0.298039, 1)
+modulate = Color(0.576471, 0.105882, 0.247059, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 offset_right = 20.01
 offset_bottom = 36.412
