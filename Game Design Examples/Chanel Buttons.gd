@@ -4,8 +4,8 @@ var num_chanels = 5 # used for "for" loop
 var ChanelsNames = ["master", "vocals", "drums", "bass", "G1", "G2"] #text for button
 
 func _ready(): #checking if loop works
-	for i in range(len(ChanelsNames)):
-		print(i , " " , ChanelsNames[i])
+	#for i in range(len(ChanelsNames)):
+		#print(i , " " , ChanelsNames[i])
 	$Chanel.text = ChanelsNames[0]
 	
 func _on_chanel_button_down(): 

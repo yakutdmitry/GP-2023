@@ -15,6 +15,11 @@ run/main_scene="res://sequencer.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Chanels="*res://Chanels.gd"
+Volume="*res://Volume.gd"
+
 [display]
 
 window/size/viewport_width=1024
