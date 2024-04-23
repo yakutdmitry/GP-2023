@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://cruxp1ndaoh82"]
+[gd_scene load_steps=16 format=3 uid="uid://cruxp1ndaoh82"]
 
 [ext_resource type="Script" path="res://soundboard.gd" id="1_qlbbm"]
 [ext_resource type="Script" path="res://Sounds.gd" id="2_d7nk4"]
 [ext_resource type="AudioStream" uid="uid://cj8ek3ajysg5h" path="res://Mix/vocals.mp3" id="2_m5xv1"]
+[ext_resource type="Script" path="res://Chanels.gd" id="3_af1mu"]
 [ext_resource type="Script" path="res://Chanel Buttons.gd" id="3_km7cg"]
 [ext_resource type="AudioStream" uid="uid://c6bcssu4ickga" path="res://Mix/drums.mp3" id="3_li7ey"]
 [ext_resource type="AudioStream" uid="uid://bmvjkv3cy05gd" path="res://Mix/Guitar 1.mp3" id="4_5845k"]
@@ -309,8 +310,10 @@ offset_right = 155.0
 offset_bottom = 198.0
 scale = Vector2(4.60964, 22.9719)
 columns = 5
+script = ExtResource("3_af1mu")
 
 [node name="VSlider2" type="VSlider" parent="CanvasLayer/Chanels"]
+visible = false
 modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
@@ -319,6 +322,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider3" type="VSlider" parent="CanvasLayer/Chanels"]
+visible = false
 modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
@@ -327,6 +331,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider4" type="VSlider" parent="CanvasLayer/Chanels"]
+visible = false
 modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
@@ -335,6 +340,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider5" type="VSlider" parent="CanvasLayer/Chanels"]
+visible = false
 modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
@@ -343,6 +349,7 @@ max_value = 2.0
 step = 0.01
 
 [node name="VSlider6" type="VSlider" parent="CanvasLayer/Chanels"]
+visible = false
 modulate = Color(0.682353, 0.141176, 0.298039, 1)
 custom_minimum_size = Vector2(20.01, 36.412)
 layout_mode = 2
