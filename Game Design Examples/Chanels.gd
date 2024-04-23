@@ -8,12 +8,15 @@ var distance = 0
 
 func _ready():
 	for i in range(0, 5):
-		_inst(Vector2(distance, 0), busses[i])
+		_inst(Vector2(distance, 0), Vars.busID)
 		distance += 25
-		print(busses[i])
+		#print(Vars.busID)
+		Vars.busID += 1
+		
 func _inst(pos, busIndex):
 	var instance = VolSlider.instantiate()
 	add_child(instance)
 	instance.position = pos
-	Volume.bus = busIndex
+	instance.get_child(0).bus = busIndex
+	
 	

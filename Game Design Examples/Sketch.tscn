@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cruxp1ndaoh82"]
+[gd_scene load_steps=17 format=3 uid="uid://cruxp1ndaoh82"]
 
 [ext_resource type="Script" path="res://soundboard.gd" id="1_qlbbm"]
 [ext_resource type="Script" path="res://Sounds.gd" id="2_d7nk4"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://Chanel Buttons.gd" id="3_km7cg"]
 [ext_resource type="AudioStream" uid="uid://c6bcssu4ickga" path="res://Mix/drums.mp3" id="3_li7ey"]
 [ext_resource type="AudioStream" uid="uid://bmvjkv3cy05gd" path="res://Mix/Guitar 1.mp3" id="4_5845k"]
+[ext_resource type="Script" path="res://Vars.gd" id="5_cycro"]
 [ext_resource type="AudioStream" uid="uid://dtnw5y3t6a4ti" path="res://Mix/Guitar 2.mp3" id="5_ebka7"]
 [ext_resource type="AudioStream" uid="uid://nrb5o8lbabd0" path="res://Mix/Bass.mp3" id="6_nkbev"]
 [ext_resource type="AudioStream" uid="uid://dbh6jb7ef8moa" path="res://samples/hihat-acoustic02.wav" id="8_0eon4"]
@@ -312,51 +313,6 @@ scale = Vector2(4.60964, 22.9719)
 columns = 5
 script = ExtResource("3_af1mu")
 
-[node name="VSlider2" type="VSlider" parent="CanvasLayer/Chanels"]
-visible = false
-modulate = Color(0.682353, 0.141176, 0.298039, 1)
-custom_minimum_size = Vector2(20.01, 36.412)
-layout_mode = 2
-size_flags_stretch_ratio = 0.0
-max_value = 2.0
-step = 0.01
-
-[node name="VSlider3" type="VSlider" parent="CanvasLayer/Chanels"]
-visible = false
-modulate = Color(0.682353, 0.141176, 0.298039, 1)
-custom_minimum_size = Vector2(20.01, 36.412)
-layout_mode = 2
-size_flags_stretch_ratio = 0.0
-max_value = 2.0
-step = 0.01
-
-[node name="VSlider4" type="VSlider" parent="CanvasLayer/Chanels"]
-visible = false
-modulate = Color(0.682353, 0.141176, 0.298039, 1)
-custom_minimum_size = Vector2(20.01, 36.412)
-layout_mode = 2
-size_flags_stretch_ratio = 0.0
-max_value = 2.0
-step = 0.01
-
-[node name="VSlider5" type="VSlider" parent="CanvasLayer/Chanels"]
-visible = false
-modulate = Color(0.682353, 0.141176, 0.298039, 1)
-custom_minimum_size = Vector2(20.01, 36.412)
-layout_mode = 2
-size_flags_stretch_ratio = 0.0
-max_value = 2.0
-step = 0.01
-
-[node name="VSlider6" type="VSlider" parent="CanvasLayer/Chanels"]
-visible = false
-modulate = Color(0.682353, 0.141176, 0.298039, 1)
-custom_minimum_size = Vector2(20.01, 36.412)
-layout_mode = 2
-size_flags_stretch_ratio = 0.0
-max_value = 2.0
-step = 0.1
-
 [node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
 offset_left = 669.0
 offset_top = 683.0
@@ -452,6 +408,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Mix" type="Node" parent="."]
+script = ExtResource("5_cycro")
 
 [node name="Vocals" type="AudioStreamPlayer2D" parent="Mix"]
 scale = Vector2(1.27047, 0.965456)
@@ -519,11 +476,6 @@ stream = ExtResource("13_nmm5x")
 [connection signal="button_down" from="CanvasLayer/SideButtons/Tom" to="CanvasLayer/SideButtons" method="_on_tom_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Crash" to="CanvasLayer/SideButtons" method="_on_crash_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Clap" to="CanvasLayer/SideButtons" method="_on_clap_button_down"]
-[connection signal="value_changed" from="CanvasLayer/Chanels/VSlider2" to="." method="_on_v_slider_2_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Chanels/VSlider3" to="." method="_on_v_slider_3_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Chanels/VSlider4" to="." method="_on_v_slider_4_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Chanels/VSlider5" to="." method="_on_v_slider_5_value_changed"]
-[connection signal="value_changed" from="CanvasLayer/Chanels/VSlider6" to="." method="_on_v_slider_6_value_changed"]
 [connection signal="button_down" from="CanvasLayer/Chanel Buttons/Chanel" to="CanvasLayer/Chanel Buttons" method="_on_chanel_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_value_changed"]
