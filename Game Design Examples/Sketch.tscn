@@ -181,6 +181,7 @@ columns = 3
 script = ExtResource("2_d7nk4")
 
 [node name="Hat" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
 theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
@@ -200,6 +201,7 @@ text = "Hat"
 clip_text = true
 
 [node name="Kick" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -221,6 +223,7 @@ text = "kick"
 clip_text = true
 
 [node name="Snare" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -242,6 +245,7 @@ text = "snare"
 clip_text = true
 
 [node name="Tom" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -263,6 +267,7 @@ text = "Tom"
 clip_text = true
 
 [node name="Crash" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -284,6 +289,7 @@ text = "Crash"
 clip_text = true
 
 [node name="Clap" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -402,6 +408,7 @@ text = "Play
 Restart"
 
 [node name="Control" type="Control" parent="CanvasLayer"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -466,9 +473,9 @@ stream = ExtResource("13_nmm5x")
 [connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_button_4_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_button_5_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_hat_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_kick_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_button_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="." method="_on_snare_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="CanvasLayer/SideButtons" method="_on_snare_button_down"]
