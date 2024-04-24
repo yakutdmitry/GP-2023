@@ -24,6 +24,9 @@ For effects sliders I made a button by clicking on which it will change BUS id i
 
 ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/bbc5d34f-8f2c-4f77-8cb6-83bc1d3355a1) ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/0b1f9a22-ec82-461d-a348-982820c35492)
 
+For buttons I also generated them using instancing of a scene where I had code attached to a button. Here is the code:
+
+![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/09368db1-4b8e-4f5a-b254-4dde925fabd5)  ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/b1a7782f-b56e-4c73-b72c-647c3bcdb8da)
 
 
 
@@ -35,74 +38,4 @@ All code for assets was made by myself. Multitrack for the song was downloaded f
 # References - Random DJ panel
 
 # What I am most proud of in the assignment Generating buttons and Sliders using Instance and transfering components' between scenes.
-
-# Proposal submitted earlier can go here:
-
-## This is how to markdown text:
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
-
-This is a youtube video:
-
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
