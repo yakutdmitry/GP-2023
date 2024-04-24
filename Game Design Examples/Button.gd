@@ -1,10 +1,12 @@
 extends Button
 
-var button_name = []
-var sound = "$Sounds/Hihat"
-var pl = sound[0]
+
+var soundID = 0 
+
 func _ready():
-	#$".".text = button_name
-	pass
+	#$"..".get_child(0).text = button_name[soundID]
+	print(soundID)
+	
 func _on_button_down():
-	$"../Sounds".get_child(0).play()
+	$"../Sounds".get_child(soundID).play()
+	print(soundID)

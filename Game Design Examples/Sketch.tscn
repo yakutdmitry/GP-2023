@@ -24,7 +24,6 @@ script = ExtResource("1_qlbbm")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ChanelsNaming" type="GridContainer" parent="CanvasLayer"]
-visible = false
 custom_minimum_size = Vector2(303.355, 68.645)
 offset_left = 48.0
 offset_top = 121.0
@@ -81,7 +80,6 @@ text = "Guitar 2"
 scroll_active = false
 
 [node name="SideText" type="GridContainer" parent="CanvasLayer"]
-visible = false
 offset_left = 878.0
 offset_top = 763.0
 offset_right = 937.78
@@ -132,7 +130,6 @@ fit_content = true
 scroll_active = false
 
 [node name="TopButtons" type="GridContainer" parent="CanvasLayer"]
-visible = false
 layout_direction = 2
 offset_left = 39.0
 offset_top = 27.0
@@ -314,7 +311,6 @@ text = "Clap"
 clip_text = true
 
 [node name="Chanels" type="GridContainer" parent="CanvasLayer"]
-visible = false
 offset_left = 39.0
 offset_top = 162.0
 offset_right = 155.0
@@ -324,7 +320,6 @@ columns = 5
 script = ExtResource("3_af1mu")
 
 [node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
-visible = false
 offset_left = 669.0
 offset_top = 683.0
 offset_right = 848.0
@@ -345,7 +340,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Master Sliders FX" type="GridContainer" parent="CanvasLayer"]
-visible = false
 offset_left = 669.0
 offset_top = 749.0
 offset_right = 709.0
@@ -389,7 +383,6 @@ step = 0.1
 value = 1.0
 
 [node name="CornerButtons" type="GridContainer" parent="CanvasLayer"]
-visible = false
 layout_direction = 2
 offset_left = 669.0
 offset_top = 5.0
@@ -503,8 +496,8 @@ stream = ExtResource("13_nmm5x")
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
-[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_button_button_down"]
 [connection signal="toggled" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_toggled"]
