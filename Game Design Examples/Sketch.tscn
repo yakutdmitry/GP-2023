@@ -180,136 +180,6 @@ theme_override_constants/v_separation = 4
 columns = 3
 script = ExtResource("2_d7nk4")
 
-[node name="Hat" type="Button" parent="CanvasLayer/SideButtons"]
-visible = false
-layout_mode = 2
-theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
-theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
-theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
-theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
-theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
-theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
-theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 13
-text = "Hat"
-clip_text = true
-
-[node name="Kick" type="Button" parent="CanvasLayer/SideButtons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
-theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
-theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
-theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
-theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
-theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
-theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 10
-text = "kick"
-clip_text = true
-
-[node name="Snare" type="Button" parent="CanvasLayer/SideButtons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
-theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
-theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
-theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
-theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
-theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
-theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 8
-text = "snare"
-clip_text = true
-
-[node name="Tom" type="Button" parent="CanvasLayer/SideButtons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
-theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
-theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
-theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
-theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
-theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
-theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 10
-text = "Tom"
-clip_text = true
-
-[node name="Crash" type="Button" parent="CanvasLayer/SideButtons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
-theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
-theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
-theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
-theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
-theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
-theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 8
-text = "Crash"
-clip_text = true
-
-[node name="Clap" type="Button" parent="CanvasLayer/SideButtons"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
-theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
-theme_override_colors/font_hover_color = Color(0.152941, 0.623529, 0.752941, 1)
-theme_override_colors/font_focus_color = Color(0.337255, 0.427451, 0.952941, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.411765, 0.513726, 0.231373, 1)
-theme_override_colors/font_disabled_color = Color(0.698039, 0.360784, 0.207843, 1)
-theme_override_colors/font_outline_color = Color(0.34902, 0.580392, 0.109804, 1)
-theme_override_colors/icon_normal_color = Color(0.376471, 0.596078, 0.262745, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 10
-text = "Clap"
-clip_text = true
-
 [node name="Chanels" type="GridContainer" parent="CanvasLayer"]
 offset_left = 39.0
 offset_top = 162.0
@@ -407,13 +277,6 @@ theme_override_colors/font_color = Color(0, 0.647059, 0.160784, 1)
 text = "Play
 Restart"
 
-[node name="Control" type="Control" parent="CanvasLayer"]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="Mix" type="Node" parent="."]
 script = ExtResource("5_cycro")
 
@@ -473,15 +336,6 @@ stream = ExtResource("13_nmm5x")
 [connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_button_4_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_button_5_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_hat_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_button_2_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="." method="_on_snare_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="CanvasLayer/SideButtons" method="_on_snare_button_down"]
-[connection signal="button_up" from="CanvasLayer/SideButtons/Snare" to="CanvasLayer/SideButtons" method="_on_snare_button_up"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Tom" to="CanvasLayer/SideButtons" method="_on_tom_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Crash" to="CanvasLayer/SideButtons" method="_on_crash_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Clap" to="CanvasLayer/SideButtons" method="_on_clap_button_down"]
 [connection signal="button_down" from="CanvasLayer/Chanel Buttons/Chanel" to="CanvasLayer/Chanel Buttons" method="_on_chanel_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_value_changed"]
