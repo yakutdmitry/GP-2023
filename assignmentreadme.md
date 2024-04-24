@@ -6,7 +6,7 @@ Student Number: C23125246
 
 Class Group: solo
 
-# Video - (https://youtu.be/0aSbUwt7_sU)
+# Video - https://youtu.be/0aSbUwt7_sU
 
 # Description of the project
 The basic idea was to make a tool which will let band practice while one of their members is absent. For example if there is no drummer someone can use drum machine to let others practice.
