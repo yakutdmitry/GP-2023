@@ -1,10 +1,41 @@
-[gd_scene load_steps=2 format=3 uid="uid://bt1ax5y7wd1cm"]
+[gd_scene load_steps=8 format=3 uid="uid://4rk67x3e5ib4"]
 
 [ext_resource type="Script" path="res://Button.gd" id="1_lmx2w"]
+[ext_resource type="AudioStream" uid="uid://dbh6jb7ef8moa" path="res://samples/hihat-acoustic02.wav" id="2_f0jgj"]
+[ext_resource type="AudioStream" uid="uid://dtrjg8ukvdbrv" path="res://samples/kick-acoustic02.wav" id="3_ojkia"]
+[ext_resource type="AudioStream" uid="uid://2bymn1rqt42x" path="res://samples/snare-acoustic01.wav" id="4_oqrmm"]
+[ext_resource type="AudioStream" uid="uid://cuh83r36pa3eu" path="res://samples/tom-acoustic01.wav" id="5_xr24y"]
+[ext_resource type="AudioStream" uid="uid://dkaromu1627xk" path="res://samples/crash-acoustic.wav" id="6_0xp0l"]
+[ext_resource type="AudioStream" uid="uid://bqxlgj4qt64fx" path="res://samples/clap-fat.wav" id="7_puhs4"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "hat"
 script = ExtResource("1_lmx2w")
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="Hihat" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("2_f0jgj")
+
+[node name="kick" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("3_ojkia")
+
+[node name="snare" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("4_oqrmm")
+
+[node name="Tom" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("5_xr24y")
+
+[node name="Crash" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("6_0xp0l")
+
+[node name="Clap" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("7_puhs4")
+
+[connection signal="button_down" from="Button" to="Button" method="_on_button_down"]

@@ -24,6 +24,7 @@ script = ExtResource("1_qlbbm")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ChanelsNaming" type="GridContainer" parent="CanvasLayer"]
+visible = false
 custom_minimum_size = Vector2(303.355, 68.645)
 offset_left = 48.0
 offset_top = 121.0
@@ -80,6 +81,7 @@ text = "Guitar 2"
 scroll_active = false
 
 [node name="SideText" type="GridContainer" parent="CanvasLayer"]
+visible = false
 offset_left = 878.0
 offset_top = 763.0
 offset_right = 937.78
@@ -130,6 +132,7 @@ fit_content = true
 scroll_active = false
 
 [node name="TopButtons" type="GridContainer" parent="CanvasLayer"]
+visible = false
 layout_direction = 2
 offset_left = 39.0
 offset_top = 27.0
@@ -181,6 +184,7 @@ columns = 3
 script = ExtResource("2_d7nk4")
 
 [node name="Hat" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.972549, 0, 0.592157, 1)
 theme_override_colors/font_pressed_color = Color(0.364706, 0.541176, 0.0901961, 1)
@@ -200,6 +204,7 @@ text = "Hat"
 clip_text = true
 
 [node name="Kick" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -221,6 +226,7 @@ text = "kick"
 clip_text = true
 
 [node name="Snare" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -242,6 +248,7 @@ text = "snare"
 clip_text = true
 
 [node name="Tom" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -263,6 +270,7 @@ text = "Tom"
 clip_text = true
 
 [node name="Crash" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -284,6 +292,7 @@ text = "Crash"
 clip_text = true
 
 [node name="Clap" type="Button" parent="CanvasLayer/SideButtons"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -305,6 +314,7 @@ text = "Clap"
 clip_text = true
 
 [node name="Chanels" type="GridContainer" parent="CanvasLayer"]
+visible = false
 offset_left = 39.0
 offset_top = 162.0
 offset_right = 155.0
@@ -314,6 +324,7 @@ columns = 5
 script = ExtResource("3_af1mu")
 
 [node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
+visible = false
 offset_left = 669.0
 offset_top = 683.0
 offset_right = 848.0
@@ -334,6 +345,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Master Sliders FX" type="GridContainer" parent="CanvasLayer"]
+visible = false
 offset_left = 669.0
 offset_top = 749.0
 offset_right = 709.0
@@ -377,6 +389,7 @@ step = 0.1
 value = 1.0
 
 [node name="CornerButtons" type="GridContainer" parent="CanvasLayer"]
+visible = false
 layout_direction = 2
 offset_left = 669.0
 offset_top = 5.0
@@ -402,6 +415,7 @@ text = "Play
 Restart"
 
 [node name="Control" type="Control" parent="CanvasLayer"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -466,8 +480,8 @@ stream = ExtResource("13_nmm5x")
 [connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_button_4_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_button_5_button_down"]
-[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_hat_button_down"]
+[connection signal="button_down" from="CanvasLayer/SideButtons/Hat" to="CanvasLayer/SideButtons" method="_on_button_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_kick_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Kick" to="CanvasLayer/SideButtons" method="_on_button_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/SideButtons/Snare" to="." method="_on_snare_button_down"]
@@ -489,8 +503,8 @@ stream = ExtResource("13_nmm5x")
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="." method="_on_h_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_4_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
-[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_button_button_down"]
 [connection signal="toggled" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_toggled"]
