@@ -1,4 +1,4 @@
-SRY I deleted the original file...
+https://youtu.be/0aSbUwt7_sU
 
 The main idea of this project is that in case the music band needs to practice and they for example don't have a drummer and bassist, they can mute all channels except drums and bass in the song and practice.
 
