@@ -80,11 +80,11 @@ text = "Guitar 2"
 scroll_active = false
 
 [node name="SideText" type="GridContainer" parent="CanvasLayer"]
-offset_left = 878.0
-offset_top = 763.0
-offset_right = 937.78
-offset_bottom = 936.0
-scale = Vector2(2.46727, 1.43587)
+offset_left = 866.0
+offset_top = 667.0
+offset_right = 925.78
+offset_bottom = 840.0
+scale = Vector2(3.77759, 1.997)
 theme_override_constants/v_separation = 20
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="CanvasLayer/SideText"]
@@ -320,10 +320,10 @@ columns = 5
 script = ExtResource("3_af1mu")
 
 [node name="Chanel Buttons" type="GridContainer" parent="CanvasLayer"]
-offset_left = 669.0
-offset_top = 683.0
-offset_right = 848.0
-offset_bottom = 749.0
+offset_left = 659.0
+offset_top = 585.0
+offset_right = 838.0
+offset_bottom = 651.0
 scale = Vector2(1.8677, 0.90202)
 columns = 2
 script = ExtResource("3_km7cg")
@@ -340,11 +340,11 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Master Sliders FX" type="GridContainer" parent="CanvasLayer"]
-offset_left = 669.0
-offset_top = 749.0
-offset_right = 709.0
-offset_bottom = 825.0
-scale = Vector2(5.05838, 3.30714)
+offset_left = 659.0
+offset_top = 651.0
+offset_right = 699.0
+offset_bottom = 727.0
+scale = Vector2(5.08219, 4.53135)
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer/Master Sliders FX"]
 modulate = Color(0, 0.627451, 0.568627, 1)
