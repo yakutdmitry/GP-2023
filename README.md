@@ -19,15 +19,18 @@ Basic Functions:
 ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/2889030a-1f8b-40b0-a203-3c49f20b86b3)
 
 
-2. Individual channel Mutes are made using a simple script where "Slider Value Changed" function is called and its value is pasted to linear_to_db function.
+2. Individual mutes are generated using loading scene with sliders and code attached to it. See screenshot for the code:
 
-![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/947fa434-abc0-4ef1-92bc-8c0411d563da)
+   ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/99838da6-3b60-4096-8e42-1f4bfa32fe92) ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/9c6ce7a2-52c6-4cc3-9afc-7a55ed9fdc8c)
 
-3. As I did not understand how samples are loaded in the "Sequencer" scene I made my launchpad using the "Audiostream.play" function combined with the "_On_Button_down_function"
 
-![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/956bf3e0-4d95-4284-8824-08de9f85cf30) ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/4b24082d-553c-446a-bcc0-b16f953dc15a)
 
+3. Drum machine is also generated using instancing scene where there was a button and node with sounds attached to it. Button was getting a child of the node Id and sound of child was assigned to the button.
+
+![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/bd15cefd-e2f5-44fe-b628-81d1bdc4e2fb)  ![image](https://github.com/yakutdmitry/GP-2023/assets/159444433/1388e2dc-8e39-4fe5-be9f-91d57527c86e)
+   
 4. Overall (master) mute and Play buttons are also very simple. They are made using the master bus "set_bus_mute" function and "Audiostream.play" for the play button.
+
 
 
 5. This one was tricky. Because originally I was making only master channel effects I just duplicated Grid containers and wrote lots of hardcode. The best idea I came up with was to make an array of channels that will let me edit the text of the channel button not to hide the previous one and show the new one.
