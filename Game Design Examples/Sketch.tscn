@@ -325,8 +325,8 @@ stream = ExtResource("12_6o4ri")
 [node name="Clap" type="AudioStreamPlayer2D" parent="Sounds"]
 stream = ExtResource("13_nmm5x")
 
-[connection signal="button_down" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_vocals_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_vocals_button_down"]
 [connection signal="toggled" from="CanvasLayer/TopButtons/Vocals" to="." method="_on_button_toggled"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/Drums" to="." method="_on_drums_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/Drums" to="." method="_on_button_2_button_down"]
@@ -334,8 +334,8 @@ stream = ExtResource("13_nmm5x")
 [connection signal="button_down" from="CanvasLayer/TopButtons/Bass" to="." method="_on_button_3_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_g_1_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G1" to="." method="_on_button_4_button_down"]
-[connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_button_5_button_down"]
+[connection signal="button_down" from="CanvasLayer/TopButtons/G2" to="." method="_on_g_2_button_down"]
 [connection signal="button_down" from="CanvasLayer/Chanel Buttons/Chanel" to="CanvasLayer/Chanel Buttons" method="_on_chanel_button_down"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider" to="CanvasLayer/Chanel Buttons" method="_on_h_slider_value_changed"]
@@ -351,6 +351,6 @@ stream = ExtResource("13_nmm5x")
 [connection signal="value_changed" from="CanvasLayer/Master Sliders FX/HSlider4" to="CanvasLayer/Master Sliders FX" method="_on_h_slider_4_value_changed"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_mute_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Mute" to="." method="_on_pause_button_down"]
-[connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
 [connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_button_down"]
 [connection signal="toggled" from="CanvasLayer/CornerButtons/Play" to="." method="_on_play_toggled"]

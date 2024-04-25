@@ -13,7 +13,7 @@ func _ready():
 			_inst(Vector2(w_dist[i], 35), i, button_name[i])
 		if i > 3:
 			_inst(Vector2(w_dist[i], 35), i, button_name[i])
-			
+	
 			
 func _inst(pos, ID, textID):
 	var instance = button.instantiate()
